@@ -1,0 +1,10 @@
+{
+  "name": "PKG_timers",
+  "version": "1.0.0",
+  "description": "Simple timer utilities for Arduino/ESP32",
+  "keywords": ["timer", "utilities"],
+  "frameworks": ["arduino"],
+  "platforms": ["espressif32", "espressif8266"]
+  ,
+  "srcDir": "src"
+}
