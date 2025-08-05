@@ -4,7 +4,6 @@
   "description": "Simple timer utilities for Arduino/ESP32",
   "keywords": ["timer", "utilities"],
   "frameworks": ["arduino"],
-  "platforms": ["espressif32", "espressif8266"]
-  ,
+  "platforms": ["espressif32", "espressif8266"] ,
   "srcDir": "src"
 }
