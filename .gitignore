@@ -1,0 +1,60 @@
+# Build outputs
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+
+# PlatformIO build directories
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Native compilation outputs
+*.out
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.backup
+
+# Dependencies (if any)
+node_modules/
+vendor/
+
+# Documentation build outputs
+docs/_build/
+docs/html/
+docs/latex/
+
+# Coverage reports
+*.gcov
+*.gcda
+*.gcno
+coverage/
+
+# Memory check outputs
+valgrind-out.txt
+*.memcheck

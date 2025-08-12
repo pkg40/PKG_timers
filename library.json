@@ -1,9 +1,32 @@
 {
   "name": "PKG_timers",
   "version": "1.0.0",
-  "description": "Simple timer utilities for Arduino/ESP32",
-  "keywords": ["timer", "utilities"],
+  "description": "Arduino timer utilities with myTimer and myTimedPin classes for ESP32/ESP8266",
+  "keywords": ["timer", "utilities", "esp32", "esp8266", "arduino", "timing"],
+  "authors": [
+    {
+      "name": "Peter K Green",
+      "email": "pkg40@yahoo.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkg40/PKG_timers.git"
+  },
   "frameworks": ["arduino"],
-  "platforms": ["espressif32", "espressif8266"] ,
-  "srcDir": "src"
+  "platforms": ["espressif32", "espressif8266"],
+  "headers": ["PKG_timers.hpp"],
+  "srcDir": "src",
+  "examples": [
+    {
+      "name": "BasicTimerExample",
+      "base": "examples/BasicTimerExample",
+      "files": ["BasicTimerExample.cpp"]
+    }
+  ],
+  "license": "MIT",
+  "build": {
+    "flags": ["-Wall"],
+    "includeDir": "src"
+  }
 }

@@ -26,9 +26,10 @@
  ************************************************************************************/
 #pragma once
 
-#include <TRACE.h>
+//#include <TRACE.h>
 
 #if defined(RTOS)
+    #include <stdint.h>
 #else
 	#include <Arduino.h>
 #endif
@@ -80,4 +81,15 @@ class myTimedPin : public myTimer {
 	void setEnable(bool);
 	void testStop();
 	void suddenStop();
+};
+
+// Lightweight wrapper to match examples/tests API expectations
+class PKG_Timer : public myTimer {
+public:
+	PKG_Timer() : myTimer(0) {}
+	explicit PKG_Timer(unsigned long period) : myTimer(period) {}
+	// Start with new period
+	void start(unsigned long period) { _period = period; myTimer::start(); }
+	// Returns true if current period elapsed; non-verbose
+	bool expired() { return this->test(false); }
 };
