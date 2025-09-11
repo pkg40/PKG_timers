@@ -1,23 +1,26 @@
-# Build outputs
-*.exe
+# Build artifacts
+build/
+dist/
+*.bin
+*.elf
+*.hex
+*.map
 *.o
 *.obj
-*.a
-*.so
-*.dll
-*.dylib
 
-# PlatformIO build directories
-.pio/
-.pioenvs/
-.piolibdeps/
+# GCC coverage files
+*.gcno
+*.gcda
+*.gcov
 
-# Native compilation outputs
-*.out
+# Debug files
+*.dSYM/
 
-# IDE and editor files
+# IDE files
+*.code-workspace
 .vscode/
 .idea/
+*.sublime-*
 *.swp
 *.swo
 *~
@@ -31,30 +34,55 @@
 ehthumbs.db
 Thumbs.db
 
+# Logs
+*.log
+logs/
+
 # Temporary files
 *.tmp
 *.temp
-*.log
+temp/
+tmp/
 
 # Backup files
 *.bak
 *.backup
+*~
 
-# Dependencies (if any)
+# Node modules (if using any web tools)
 node_modules/
-vendor/
 
-# Documentation build outputs
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Certificate files (security)
+*.pem
+*.key
+*.crt
+*.p12
+
+# Local configuration files that shouldn't be shared
+config_local.json
+secrets.h
+credentials.h
+
+# Documentation build
 docs/_build/
-docs/html/
-docs/latex/
-
-# Coverage reports
-*.gcov
-*.gcda
-*.gcno
-coverage/
-
-# Memory check outputs
-valgrind-out.txt
-*.memcheck
+.pio
